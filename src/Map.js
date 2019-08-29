@@ -110,7 +110,6 @@ class Map extends Component {
       .ref("/")
       .once("value")
       .then(snapshot => {
-        console.log(snapshot.val());
         this.loadData(snapshot.val());
       });
 
