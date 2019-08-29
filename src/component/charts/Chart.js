@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { scaleBand, scaleLinear } from 'd3-scale';
 import Axes from './Axes';
-// import data from './dataNew.json'
-
 import data from './d';
 import Bars from './Bar';
 import Tooltip from './Tooltip';
 import ResponsiveChart from './ResponsiveChart';
-import * as d3 from 'd3';
 class Chart extends Component {
   constructor() {
     super();
