@@ -2,18 +2,6 @@ import React, { Component } from 'react';
 import '../Blog/ArticleView.css'
 import ArticleInArticleView from './ArticleInArticleView'
 import { Link } from 'react-router-dom'
-// import { connect } from 'react-redux'
-// import {
-//     getArticle,
-//     clap,
-//     follow
-// } from './../redux/actions/actions'
-// import PropTypes from 'prop-types'
-// import FollowButton from './FollowButton'
-
-// let text='hello'
-// let claps = 5
-// let title
 
 const array = [
     {
@@ -37,15 +25,6 @@ const array = [
 ]
 
 class ArticleView extends Component {
-    // componentDidMount() {
-    //     document.body.classNameNameName = 'posts show'
-    // }
-    // componentWillMount() {
-    //     this.props.getArticle(this.props.match.params.id)
-    // }
-    // componentWillUnmount() {
-    //     document.body.classNameNameName = ''
-    // }
     render() {
         return (
             <div className="no-navbar">
@@ -55,14 +34,6 @@ class ArticleView extends Component {
                 <div className="wrapper site-description">
                     <center>a blog</center>
                 </div>
-                {/* <div className="wrapper">
-                <div className="trigger site-navigation">
-                <a className="page-link" href="/">HOME</a>
-                    <span className="exclamationMark">/</span><a className="page-link" href="/about/">About</a>
-                    <span className="exclamationMark">/</span><a className="page-link" href="/portfolio/">Portfolio</a>
-                    <span className="exclamationMark">/</span><a className="page-link" href="/contact/">Contact</a>
-                </div>
-            </div> */}
                 <div className='page-content'>
                     <div className='wrapper'>
                         <div className='home'>
@@ -76,19 +47,5 @@ class ArticleView extends Component {
         )
     }
 }
-// {/* const mapStateToProps = state => {
-//     return {
-//         Article: state.articles.article,
-//         user: state.authUser.user
-//     }
-// }
-// ArticleView.propTypes = {
-//     params: PropTypes.object.isRequired
-// } */}
-// {/* export default connect(mapStateToProps, {
-//     getArticle,
-//     clap,
-//     follow
-// })(ArticleView); */}
 
 export default ArticleView
