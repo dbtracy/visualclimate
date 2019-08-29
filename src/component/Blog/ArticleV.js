@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Blog/ArticleView.css'
-import  ArticleInArticleView from './ArticleInArticleView'
+import ArticleInArticleView from './ArticleInArticleView'
 import { Link } from 'react-router-dom'
 // import { connect } from 'react-redux'
 // import {
@@ -50,12 +50,12 @@ class ArticleView extends Component {
         return (
             <div className="no-navbar">
                 <div className="wrapper">
-                   <center><Link to=''><div className="site-title" style={{marginTop: '150px'}}> Climate Change :-(</div></Link></center>
+                    <center><Link to=''><div className="site-title" style={{ marginTop: '150px' }}> Thoughts on Climate Change</div></Link></center>
                 </div>
                 <div className="wrapper site-description">
-                   <center>a  climate blog</center>
+                    <center>a blog</center>
                 </div>
-            {/* <div className="wrapper">
+                {/* <div className="wrapper">
                 <div className="trigger site-navigation">
                 <a className="page-link" href="/">HOME</a>
                     <span className="exclamationMark">/</span><a className="page-link" href="/about/">About</a>
@@ -65,13 +65,13 @@ class ArticleView extends Component {
             </div> */}
                 <div className='page-content'>
                     <div className='wrapper'>
-                        <div className='home'>                       
-                           {array.map(element => (
-                               <ArticleInArticleView data={element}/>
+                        <div className='home'>
+                            {array.map(element => (
+                                <ArticleInArticleView data={element} />
                             ))}
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         )
     }
