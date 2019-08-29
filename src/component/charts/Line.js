@@ -41,9 +41,9 @@ export default class Line extends Component {
           d={line(data)}
           fill={'none'}
           stroke={'steelblue'}
-          stroke-width={'1.5'}
-          stroke-linejoin={'round'}
-          stroke-linecap={'round'}
+          strokeWidth={'1.5'}
+          strokeLinejoin={'round'}
+          strokeLinecap={'round'}
         />
         {this.state.isHovered ? (
           <g>

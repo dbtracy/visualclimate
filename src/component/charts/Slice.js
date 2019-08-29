@@ -46,15 +46,15 @@ class Slice extends React.Component {
           dy=".35em"
           textAnchor="middle"
           fill="black"
-          font-size="20px"
+          fontSize="20px"
         >
           {this.props.label}
         </text>
-        {(this.state.isHovered)?
-           <div>
-           <div style={tooltipStyle}>this is the tooltip!!</div>
-         </div>
-          :null}
+        {(this.state.isHovered) ?
+          <div>
+            <div style={tooltipStyle}>this is the tooltip!!</div>
+          </div>
+          : null}
       </g>
     );
   }

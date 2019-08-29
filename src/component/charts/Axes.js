@@ -13,32 +13,32 @@ export default ({ scales, margins, svgDimensions }) => {
     orient: 'Left',
     scale: scales.yScale,
     translate: `translate(${margins.left}, 0)`,
-    tickSize: width - margins.left - margins.right,   
+    tickSize: width - margins.left - margins.right,
   };
   return (
     <g>
       <Axis {...xProps} />
       <Axis {...yProps} />
       <text
-          y='25'
-          dy="0.5em"
-          transform ="rotate(-90)"
-          fill="black"
-          text-anchor="end"
-          font-size="10px"
-        >
-          {'Temperature \u2103'}
+        y='25'
+        dy="0.5em"
+        transform="rotate(-90)"
+        fill="black"
+        textAnchor="end"
+        fontSize="10px"
+      >
+        {'Temperature \u2103'}
       </text>
       <text
-          y='4'
-          dy="29em"
-          dx='2em'
-          transform ="rotate(0)"
-          fill="black"
-          text-anchor="start"
-          font-size="10px"
-        >
-          {'Year/month (2010-2019)'}
+        y='4'
+        dy="29em"
+        dx='2em'
+        transform="rotate(0)"
+        fill="black"
+        textAnchor="start"
+        fontSize="10px"
+      >
+        {'Year/month (2010-2019)'}
       </text>
     </g>
   );

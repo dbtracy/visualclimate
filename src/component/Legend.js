@@ -4,7 +4,7 @@ export default class Legend extends Component {
   render() {
     const selectedData = this.props.selectedData;
     return selectedData === "Temperature" ? (
-      <div id="state-legend" class="legend">
+      <div id="state-legend" className="legend">
         <div>
           <h3>Hot</h3>
         </div>
@@ -43,44 +43,44 @@ export default class Legend extends Component {
         </div>
       </div>
     ) : (
-      <div id="state-legend" class="legend">
-        <div>
-          <h3>Dry</h3>
+        <div id="state-legend" class="legend">
+          <div>
+            <h3>Dry</h3>
+          </div>
+          <div>
+            <span style={{ background: "#FF4633" }} />
+          </div>
+          <div>
+            <span style={{ background: "#FF8333" }} />
+          </div>
+          <div>
+            <span style={{ background: "#FFA533" }} />
+          </div>
+          <div>
+            <span style={{ background: "#FFB533" }} />
+          </div>
+          <div>
+            <span style={{ background: "#FFB533" }} />
+          </div>
+          <div>
+            <span style={{ background: "#FFDD33" }} />
+          </div>
+          <div>
+            <span style={{ background: "#FFF633" }} />
+          </div>
+          <div>
+            <span style={{ background: "#ECFF33" }} />
+          </div>
+          <div>
+            <span style={{ background: "#CEFF33" }} />
+          </div>
+          <div>
+            <span style={{ background: "#9FFF33" }} />
+          </div>
+          <div>
+            <h3>Wet</h3>
+          </div>
         </div>
-        <div>
-          <span style={{ background: "#FF4633" }} />
-        </div>
-        <div>
-          <span style={{ background: "#FF8333" }} />
-        </div>
-        <div>
-          <span style={{ background: "#FFA533" }} />
-        </div>
-        <div>
-          <span style={{ background: "#FFB533" }} />
-        </div>
-        <div>
-          <span style={{ background: "#FFB533" }} />
-        </div>
-        <div>
-          <span style={{ background: "#FFDD33" }} />
-        </div>
-        <div>
-          <span style={{ background: "#FFF633" }} />
-        </div>
-        <div>
-          <span style={{ background: "#ECFF33" }} />
-        </div>
-        <div>
-          <span style={{ background: "#CEFF33" }} />
-        </div>
-        <div>
-          <span style={{ background: "#9FFF33" }} />
-        </div>
-        <div>
-          <h3>Wet</h3>
-        </div>
-      </div>
-    );
+      );
   }
 }
