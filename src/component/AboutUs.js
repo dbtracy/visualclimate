@@ -19,7 +19,7 @@ const Background = require('../../src/background.jpg')
 export default class AboutUs extends Component {
 	render() {
 		return (
-			<div 
+			<div
 			// style={ sectionStyle}
 			>
 				<div>
@@ -88,7 +88,7 @@ export default class AboutUs extends Component {
 								<ExpansionPanelDetails style={{ display: "block" }}>
 									<Typography>
 										<div className="aboutSizing" align="left">
-										<p><strong>Take a deeper look into our project repository:</strong> https://github.com/india-raven/cs</p>
+											<p><strong>Take a deeper look into our project repository:</strong> https://github.com/india-raven/cs</p>
 											<ul>
 												<li>
 													The backbone of this application uses React Mapbox GL
@@ -167,6 +167,18 @@ export default class AboutUs extends Component {
 									<Typography>
 										<div id="team" className="aboutSizing">
 											<div>
+												<h2>DAN TRACY</h2>
+												<a target="_blank" href="https://github.com/dbtracy">
+													<img
+														alt="Dan"
+														src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Penguin-128.png"
+													/>
+												</a>
+												<p><strong>Bio:</strong> Musician- and actor-turned-coder. I'm interested in working as part of a team to help build ideas, especially those that can turn our good planet into a great one. </p>
+												<p><strong>Github Profile:</strong> github.com/dbtracy</p>
+												<p><strong>LinkedIn Profile:</strong> linkedin.com/in/dan-tracy</p>
+											</div>
+											<div>
 												<h2>RUSLAN ZYABBAROV</h2>
 												<a target="_blank" href="https://github.com/zyabb">
 													<img
@@ -189,18 +201,6 @@ export default class AboutUs extends Component {
 												<p><strong>Bio:</strong> I excel in using my expertise in data science and mathematics to help the world make more informed decisions. </p>
 												<p><strong>Github Profile:</strong> github.com/TalRodin</p>
 												<p><strong>LinkedIn Profile:</strong> linkedin.com/in/alyonarodin</p>
-											</div>
-											<div>
-												<h2>DAN TRACY</h2>
-												<a target="_blank" href="https://github.com/dbtracy">
-													<img
-														alt="Dan"
-														src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Penguin-128.png"
-													/>
-												</a>
-												<p><strong>Bio:</strong> Musician- and actor-turned-coder. I'm interested in working as part of a team to help build ideas, especially those that can turn our good planet into a great one. </p>
-												<p><strong>Github Profile:</strong> github.com/dbtracy</p>
-												<p><strong>LinkedIn Profile:</strong> linkedin.com/in/dan-tracy</p>
 											</div>
 											<div>
 												<h2>XAVIER OLIVARES</h2>
