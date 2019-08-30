@@ -112,18 +112,6 @@ class Map extends Component {
       .then(snapshot => {
         this.loadData(snapshot.val());
       });
-
-    // requestJson("data/us-temp.geojson", (error, response) => {
-    //   //WE USE CONVENIENT D3 LIBRARY TO REQUEST JSON
-    //   if (!error) {
-    //     console.log(response);
-    //     this.loadData(response); //IF THERE IS NO ERROR => INVOKE _LOADDATA AND PASS RESPONSE THERE
-    //   } else {
-    //     console.log("----------------------------------------");
-    //     console.error(error);
-    //     console.log("----------------------------------------");
-    //   }
-    // });
   }
   onViewportChange = viewport =>
     this.setState({ viewport: { ...this.state.viewport, ...viewport } });
