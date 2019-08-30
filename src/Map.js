@@ -144,17 +144,8 @@ class Map extends Component {
     } = event;
     if (features[0]) {
       this.goToViewport(event.lngLat[0], event.lngLat[1]);
-      //POTENTIONAL PROBLEM HERE
       this.setState({
         name: features[0].properties.name,
-        //   viewport: {
-        //     width: '100vw',
-        //     height: '100vh',
-        //     longitude: event.lngLat[0],
-        //     latitude: event.lngLat[1],
-        //     zoom: 5,
-        //     captureScroll: false,
-        //   },
         stateData: features[0].properties
       });
     } else {
