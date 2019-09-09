@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import GeoFire from "../Fire";
-import firebase from "firebase";
 import { JobDescription } from "../component/JobDescription";
 
 const jobs = require("./jobs");

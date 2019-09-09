@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-const Background = require('../../src/background.jpg')
+// const Background = require('../../src/background.jpg')
 
 // const sectionStyle = {
 // 	width: "100%",
@@ -168,7 +165,7 @@ export default class AboutUs extends Component {
 										<div id="team" className="aboutSizing">
 											<div>
 												<h2>DAN TRACY</h2>
-												<a target="_blank" href="https://github.com/dbtracy">
+												<a href="https://github.com/dbtracy">
 													<img
 														alt="Dan"
 														src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Penguin-128.png"
@@ -180,7 +177,7 @@ export default class AboutUs extends Component {
 											</div>
 											<div>
 												<h2>RUSLAN ZYABBAROV</h2>
-												<a target="_blank" href="https://github.com/zyabb">
+												<a href="https://github.com/zyabb">
 													<img
 														alt="Ruslan"
 														src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Rabbit-128.png"
@@ -192,7 +189,7 @@ export default class AboutUs extends Component {
 											</div>
 											<div>
 												<h2>ALYONA RODINA</h2>
-												<a target="_blank" href="https://github.com/TalRodin">
+												<a href="https://github.com/TalRodin">
 													<img
 														alt="Alyona"
 														src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Panda-128.png"
@@ -205,7 +202,7 @@ export default class AboutUs extends Component {
 											<div>
 												<h2>XAVIER OLIVARES</h2>
 												<a
-													target="_blank"
+
 													href="https://github.com/xavierolivares"
 												>
 													<img

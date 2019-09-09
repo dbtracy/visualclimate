@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactMapGL, {
-  LinearInterpolator,
   FlyToInterpolator
 } from "react-map-gl";
 import firebase from "firebase";
@@ -9,10 +8,8 @@ import { defaultMapStyle, dataLayer } from "./map-style.js";
 import { dataLayerPDSI } from "./map-style-pdsi.js";
 import { updatePercentiles } from "./utils";
 import { fromJS } from "immutable";
-import { json as requestJson } from "d3-request";
 import Button from "./component/totalInfo/button.js";
 import ControlInfo from "./control-info";
-import JobBoard from "./component/JobBoard";
 import StateInfo from "./component/StateInfo";
 // import SearchAppBar from "./component/searchappbar";
 import Navbar from "./component/Navbar";
@@ -139,8 +136,7 @@ class Map extends Component {
 
   onClick = event => {
     const {
-      features,
-      srcEvent: { offsetX, offsetY }
+      features
     } = event;
     if (features[0]) {
       this.goToViewport(event.lngLat[0], event.lngLat[1]);
@@ -199,7 +195,7 @@ class Map extends Component {
   };
 
   render() {
-    const { viewport, mapStyle } = this.state;
+    const { mapStyle } = this.state;
     return (
       <div style={{ height: "100%" }}>
         <ReactMapGL

@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react';
 import NewPage from './component/totalInfo/newPage';
-import Fab from '@material-ui/core/Fab';
-import IconButton from '@material-ui/core/IconButton';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+
 //modal wrapper for our popup
 const defaultContainer = ({ children, classInStateInfo }) => (
   <div className={classInStateInfo}>{children}</div> //change

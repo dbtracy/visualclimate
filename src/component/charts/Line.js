@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { scaleLinear } from 'd3-scale';
-import { interpolateLab } from 'd3-interpolate';
 import * as d3 from 'd3';
-import ToolTipLine from './ToolTipLine';
 export default class Line extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +24,7 @@ export default class Line extends Component {
   render() {
     const { scales, margins, data, svgDimensions, ...props } = this.props;
     const { xScale, yScale } = scales;
-    const { height, width } = svgDimensions;
+    // const { height, width } = svgDimensions;
     // let { x, y } = this.props;
 
     let line = d3
