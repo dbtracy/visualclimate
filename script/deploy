@@ -2,7 +2,7 @@ set -e
 
 echo "MSG starting"
 function cleanup_at_exit {
-    git checkout development
+    git checkout master
     git branch -D deploy
 }
 
@@ -14,7 +14,7 @@ git checkout -b deploy
 
 
 echo "MSG adding env file"
-git add -f ./.env
+git add -f ./.env.local
 git add -f ./Procfile
 
 echo "MSG make a commit"
