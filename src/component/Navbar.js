@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
-import { json as requestJson } from 'd3-request';
 
 const defaultContainer = ({ children }) => (
   <div className="navbar">{children}</div>
@@ -14,7 +13,7 @@ const AdapterLink = React.forwardRef((props, ref) => (
 export default class ControlPanel extends PureComponent {
   render() {
     const Container = this.props.containerComponent || defaultContainer;
-    const { settings } = this.props;
+    // const { settings } = this.props;
     const logo = require('../VisualClimate_logo.png');
 
     return (

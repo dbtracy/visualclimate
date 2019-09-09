@@ -177,7 +177,6 @@ class Map extends Component {
 
   showUSA = () => {
     this.setState({ showUSAInfo: true });
-    console.log("setting showUSAInfo");
     // this.onClick(event);
   };
 
